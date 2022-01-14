@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<script src="./assets/js/app.js" defer></script>
+	<title>Memory Card Game</title>
+</head>
+<body>
+	<div class="setting-menu-container" id="menu-settings">
+		<div class="top">
+			<h2>SETTINGS</h2>
+			<a id="btn-exit-menu-settings">X</a>
+		</div>
+		<div class="main">
+			<div class="themes">
+				<h3>THEMES</h3>
+				<div>
+					<label>Choose your theme:</label>
+					<select id="theme">
+						<option value="pokemon">pokemon</option>
+						<option value="fruits">fruits</option>
+						<option value="cats">cats</option>
+						<option value="dogs">dogs</option>
+					</select>
+				</div>
+			</div>
+			<div class="mode">
+				<h3>ZEN MODE</h3>
+				<div>
+					<label>Number of rows:</label>
+					<input type="number" value="4" id="zen-nb-rows">
+				</div>
+				<div>
+					<label>Number of columns:</label>
+					<input type="number" value="4" id="zen-nb-cols">
+				</div>
+				<div>
+					<label>Images similary needed:</label>
+					<input type="number" value="4" id="zen-similary-needed">
+				</div>
+				<div>
+					<label>Timer size (s):</label>
+					<input type="number" value="infinity" id="zen-timer-size">
+				</div>
+			</div>
+			<div class="mode">
+				<h3>EASY MODE</h3>
+				<div>
+					<label>Number of rows:</label>
+					<input type="number" value="4" id="easy-nb-rows">
+				</div>
+				<div>
+					<label>Number of columns:</label>
+					<input type="number" value="4" id="easy-nb-cols">
+				</div>
+				<div>
+					<label>Images similary needed:</label>
+					<input type="number" value="2" id="easy-similary-needed">
+				</div>
+				<div>
+					<label>Timer size (s):</label>
+					<input type="number" value="100" id="easy-timer-size">
+				</div>
+			</div>
+			<div class="mode">
+				<h3>MEDIUM MODE</h3>
+				<div>
+					<label>Number of rows:</label>
+					<input type="number" value="6" id="medium-nb-rows">
+				</div>
+				<div>
+					<label>Number of columns:</label>
+					<input type="number" value="6" id="medium-nb-cols">
+				</div>
+				<div>
+					<label>Images similary needed:</label>
+					<input type="number" value="2" id="medium-similary-needed">
+				</div>
+				<div>
+					<label>Timer size (s):</label>
+					<input type="number" value="100" id="medium-timer-size">
+				</div>
+			</div>
+			<div class="mode">
+				<h3>HARD MODE</h3>
+				<div>
+					<label>Number of rows:</label>
+					<input type="number" value="6" id="hard-nb-rows">
+				</div>
+				<div>
+					<label>Number of columns:</label>
+					<input type="number" value="6" id="hard-nb-cols">
+				</div>
+				<div>
+					<label>Images similary needed:</label>
+					<input type="number" value="3" id="hard-similary-needed">
+				</div>
+				<div>
+					<label>Timer size (s):</label>
+					<input type="number" value="100" id="hard-timer-size">
+				</div>
+			</div>
+			<div class="bottom">
+				<a id="btn-default">DEFAULT</a>
+			</div>
+		</div>
+	</div>
+	<div class="play-menu-container" id="menu-play">
+		<div class="top">
+			<h2>PLAY</h2>
+			<a id="btn-exit-menu-play">X</a>
+		</div>
+		<div class="main">
+			<a id="btn-play-zen">ZEN</a>
+			<a id="btn-play-easy">EASY</a>
+			<a id="btn-play-medium">MEDIUM</a>
+			<a id="btn-play-hard">HARD</a>
+		</div>
+	</div>
+	<header>
+		<h1>MEMORY_CARD_GAME</h1>
+		<nav>
+			<ul>
+				<li><a id="btn-play">PLAY</a></li>
+				<li><a id="btn-settings">SETTINGS</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h4 id="timer"></h4>
+	<div class="grid-container">
+		<div class="grid" id="board">
+		</div>
+	</div>
+</body>
+</html>

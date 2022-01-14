@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Readex+Pro:wght@700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	color: #edf0f1;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+li, a, button {
+	font-size: 16px;
+	text-decoration: none;
+	list-style: none;
+}
+
+h1 {
+	font-family: "Readex Pro";
+	font-size: 28px;
+	margin: 1rem;
+}
+
+h2 {
+	font-family: "Readex Pro";
+	font-size: 22px;
+}
+
+h3 {
+	font-family: "Readex Pro";
+	font-size: 18px;
+	margin: 1rem;
+}
+
+.setting-menu-container {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+}
+
+.setting-menu-container .top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #19191d;
+	padding: 1rem;
+	width: 400px;
+}
+
+.setting-menu-container .main {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	height: 450px;
+	align-items: stretch;
+	background-color: #24252a;
+	padding: 1rem;
+	overflow-y: scroll;
+}
+
+
+.setting-menu-container .main .themes {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 1rem;
+	text-align: center;
+	border-bottom: 1px solid #19191d;
+}
+
+.setting-menu-container .main .themes > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.setting-menu-container .main .themes select{
+	background-color: #19191d;
+	padding: 1rem;
+	border: none;
+	border-bottom: 3px;
+	appearance: none;
+	outline: none;
+	cursor: pointer;
+	transition: background .3s;
+}
+
+.setting-menu-container .main .themes select:hover{
+	background-color: #37D631;
+}
+
+.setting-menu-container .top #btn-exit-menu-settings {
+	cursor: pointer;
+	font-family: "Readex Pro";
+}
+
+.setting-menu-container .top #btn-exit-menu-settings:hover {
+	color: tomato;
+}
+
+.setting-menu-container .main .mode {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 1rem;
+	text-align: center;
+	border-bottom: 1px solid #19191d;
+}
+
+.setting-menu-container .main .mode > div{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.setting-menu-container .main .mode input{
+	padding: .5rem;
+	width: 100px;
+	background-color: #19191d;
+	border: none;
+	border-bottom: 3px;
+	appearance: none;
+	outline: none;
+}
+
+.setting-menu-container .main .bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.setting-menu-container .main .bottom a{
+	cursor: pointer;
+	font-family: "Montserrat", sans-serif;
+	padding: 1rem;
+	background-color: #19191d;
+	letter-spacing: .2rem;
+	transition: background .3s;
+}
+
+.setting-menu-container .main .bottom #btn-default:hover{
+	background-color: purple;
+}
+
+.setting-menu-container .main .bottom #btn-apply:hover{
+	background-color: #37D631;
+}
+
+.play-menu-container {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+}
+
+.play-menu-container .top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #19191d;
+	padding: 1rem;
+	width: 400px;
+}
+
+.play-menu-container .top #btn-exit-menu-play {
+	cursor: pointer;
+	font-family: "Readex Pro";
+}
+
+.play-menu-container .top #btn-exit-menu-play:hover {
+	color: tomato;
+}
+
+.play-menu-container .main {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	align-items: stretch;
+	background-color: #24252a;
+	padding: 1rem;
+	overflow-y: scroll;
+}
+
+.play-menu-container .main a{
+	cursor: pointer;
+	font-family: "Montserrat", sans-serif;
+	padding: 1rem;
+	background-color: #19191d;
+	letter-spacing: .2rem;
+	margin-bottom: 1rem;
+	transition: background .3s;
+}
+
+.play-menu-container .main #btn-play-zen:hover{
+	background-color: royalblue;
+}
+
+.play-menu-container .main #btn-play-easy:hover{
+	background-color: #37D631;
+}
+
+.play-menu-container .main #btn-play-medium:hover{
+	background-color: orange;
+}
+
+.play-menu-container .main #btn-play-hard:hover{
+	background-color: red;
+}
+
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	background-color: #24252a;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+}
+
+header nav {
+	flex-grow: 1;
+}
+
+header nav ul {
+	display: flex;
+	justify-content: center;
+}
+
+header nav ul li{
+	display: flex;
+	align-items: center;
+	margin-left: 5rem;
+	letter-spacing: .2rem;
+}
+
+header nav ul li a {
+	position: relative;
+	padding: .3rem;
+	transition: transform .1s;
+	cursor: pointer;
+}
+
+header nav ul li a:active {
+	transform: scale(1.05);
+}
+
+header nav ul li a:hover{
+	color: #37D631;
+}
+
+header nav ul li a::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background-color: #37D631;
+	transform: scaleX(0);
+	transform-origin: bottom left;
+	transition: transform 0.3s;
+}
+
+header nav ul li a:hover::after{
+	transform: scaleX(1);
+}
+
+.grid-container {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	overflow: auto;
+	width: 100%;
+}
+
+.grid {
+	display: flex;
+	flex-direction: column;
+}
+
+.grid .row {
+	display: flex;
+}
+
+.grid .row .cell {
+	width: 75px;
+	height: 75px;
+	background-color: rgb(223, 223, 223);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 1px;
+	margin-bottom: 1px;
+	font-size: 3rem;
+	color: rgb(29, 29, 29);
+	cursor: pointer;
+}
+
+.grid .row .cell:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+img {
+	width: 75px;
+	height: 75px;
+}
+
+#timer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	font-size: 2rem;
+	padding: 2rem;
+}
